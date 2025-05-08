@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+bytecode_hash = "none"
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+gas_limit = 3000000000
+gas_price = 2000000000
+solc_version = "0.8.29"
+evm_version = "prague" 
+#gas_report = []
+#ignored_error_codes = [3860, 5574, 6321]
+
+[rpc_endpoints]
+mainnet = "${MAINNET_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"
